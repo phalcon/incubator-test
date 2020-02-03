@@ -37,7 +37,7 @@ jobs:
       - name: Run test suite
         run: |
           vendor/bin/codecept build
-          vendor/bin/codecept run --coverage-clover=coverage.xml
+          vendor/bin/codecept run --coverage-xml=coverage.xml
 
       - name: Upload coverage to Codecov
         if: success()
