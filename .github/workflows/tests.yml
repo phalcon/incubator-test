@@ -40,7 +40,7 @@ jobs:
           vendor/bin/codecept run unit --coverage-xml=coverage.xml
 
       - name: Upload coverage to Codecov
-        if: success()
+        if: matrix.php-versions == '7.4'
         uses: codecov/codecov-action@v1
         with:
           token: ${{secrets.CODECOV_TOKEN}}
