@@ -1,4 +1,5 @@
 <?php
+
 /*
   +------------------------------------------------------------------------+
   | Phalcon Framework                                                      |
@@ -18,8 +19,8 @@
 
 namespace Phalcon\Test\Test\Traits;
 
-use Phalcon\Test\Codeception\UnitTestCase as Unit;
 use Phalcon\Config;
+use Phalcon\Test\Codeception\UnitTestCase as Unit;
 use Phalcon\Test\Traits\UnitTestCase;
 use PHPUnit_Framework_MockObject_MockObject;
 

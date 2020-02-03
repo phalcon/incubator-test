@@ -1,4 +1,5 @@
 <?php
+
 /*
   +------------------------------------------------------------------------+
   | Phalcon Framework                                                      |
@@ -18,15 +19,11 @@
 
 namespace Phalcon\Test\Traits;
 
-use Phalcon\Di;
 use Phalcon\Config;
-use Phalcon\Di\FactoryDefault;
-use Phalcon\Di\InjectionAwareInterface;
+use Phalcon\Di;
 use Phalcon\Di\DiInterface;
 use Phalcon\Escaper;
 use Phalcon\Url;
-use Phalcon\Test\Traits\ResultSet;
-use PHPUnit\Framework\TestCase as TestCase;
 
 trait UnitTestCase
 {

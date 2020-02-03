@@ -1,9 +1,10 @@
 <?php
+
 namespace Phalcon\Test\Test;
 
 use Codeception\Test\Unit;
-use Phalcon\Test\UnitTestCase;
 use Phalcon\Test\PHPUnit\UnitTestCase as PHPUnitTestCase;
+use Phalcon\Test\UnitTestCase;
 
 /**
  * \Phalcon\Test\Test\UnitTestCaseTest. Test That Old Placement Still Works Correctly.

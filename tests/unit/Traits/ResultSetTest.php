@@ -1,10 +1,11 @@
 <?php
+
 namespace Phalcon\Test\Test\Traits;
 
 use Phalcon\Mvc\Model;
 use Phalcon\Mvc\Model\Resultset\Simple;
-use Phalcon\Test\Traits\ResultSet;
 use Phalcon\Test\Codeception\UnitTestCase as Test;
+use Phalcon\Test\Traits\ResultSet;
 
 /**
  * \Phalcon\Test\Test\Traits\ResultSetTest

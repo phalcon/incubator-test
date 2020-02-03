@@ -1,4 +1,5 @@
 <?php
+
 /*
   +------------------------------------------------------------------------+
   | Phalcon Framework                                                      |
@@ -19,9 +20,7 @@
 namespace Phalcon\Test\Codeception;
 
 use Codeception\Test\Unit;
-
 use Phalcon\Test\Traits\UnitTestCase as UnitTestCaseTrait;
-use \UnitTester;
 
 class UnitTestCase extends Unit
 {

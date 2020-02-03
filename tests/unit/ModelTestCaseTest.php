@@ -1,4 +1,5 @@
 <?php
+
 namespace Phalcon\Test\Test;
 
 use Codeception\Test\Unit;

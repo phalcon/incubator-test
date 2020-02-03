@@ -1,9 +1,10 @@
 <?php
+
 namespace Phalcon\Test\Test\PHPUnit;
 
 use Codeception\Test\Unit;
-use Phalcon\Test\PHPUnit\FunctionalTestCase;
 use Phalcon\Mvc\Dispatcher as PhDispatcher;
+use Phalcon\Test\PHPUnit\FunctionalTestCase;
 
 /**
  * \Phalcon\Test\Test\PHPUnit\FunctionalTestCaseTest. Tests Integration With Trait.

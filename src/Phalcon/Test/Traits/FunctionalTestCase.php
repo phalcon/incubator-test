@@ -1,4 +1,5 @@
 <?php
+
 /*
   +------------------------------------------------------------------------+
   | Phalcon Framework                                                      |
@@ -18,10 +19,10 @@
 
 namespace Phalcon\Test\Traits;
 
-use Phalcon\Escaper as PhEscaper;
-use Phalcon\Mvc\Dispatcher as PhDispatcher;
-use Phalcon\Mvc\Application as PhApplication;
 use Phalcon\Di\DiInterface;
+use Phalcon\Escaper as PhEscaper;
+use Phalcon\Mvc\Application as PhApplication;
+use Phalcon\Mvc\Dispatcher as PhDispatcher;
 
 trait FunctionalTestCase
 {

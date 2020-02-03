@@ -1,11 +1,12 @@
 <?php
+
 namespace Phalcon\Test\Test\Codeception;
 
 use Codeception\Lib\Di;
 use Codeception\Test\Metadata;
 use Codeception\Test\Unit;
-use Phalcon\Test\Codeception\ModelTestCase;
 use Phalcon\Mvc\Model\Manager as PhModelManager;
+use Phalcon\Test\Codeception\ModelTestCase;
 
 /**
  * \Phalcon\Test\Test\Codeception\ModelTestCaseTest. Tests Integration With Trait.

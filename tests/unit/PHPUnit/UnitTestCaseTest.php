@@ -1,9 +1,10 @@
 <?php
+
 namespace Phalcon\Test\Test\PHPUnit;
 
 use Codeception\Test\Unit;
-use Phalcon\Test\PHPUnit\UnitTestCase;
 use Phalcon\Di\DiInterface;
+use Phalcon\Test\PHPUnit\UnitTestCase;
 
 /**
  * \Phalcon\Test\Test\PHPUnit\UnitTestCaseTest. Tests Integration With Trait.

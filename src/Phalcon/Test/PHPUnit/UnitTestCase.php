@@ -19,9 +19,9 @@
 
 namespace Phalcon\Test\PHPUnit;
 
+use Phalcon\Di\InjectionAwareInterface;
 use Phalcon\Test\Traits\UnitTestCase as UnitTestCaseTrait;
 use PHPUnit\Framework\TestCase as TestCase;
-use Phalcon\Di\InjectionAwareInterface;
 
 /**
  * Class UnitTestCase

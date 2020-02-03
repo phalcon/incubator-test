@@ -47,7 +47,7 @@ trait ResultSet
             ->setMethods(
                 [
                     'valid',
-//                    'current', //Disable due to final restriction
+                //                    'current', //Disable due to final restriction
                     'key',
                     'next',
                     'toArray',
