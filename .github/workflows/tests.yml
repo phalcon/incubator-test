@@ -31,6 +31,9 @@ jobs:
           key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.json') }}
           restore-keys: ${{ runner.os }}-composer-
 
+      - name: Validate Composer
+        run: composer validate
+
       - name: Install Composer dependencies
         run: composer install --prefer-dist --no-suggest
 
