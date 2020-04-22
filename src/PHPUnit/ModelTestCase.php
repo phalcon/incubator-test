@@ -13,7 +13,7 @@ declare(strict_types=1);
 
 namespace Phalcon\Incubator\Test\PHPUnit;
 
-use Phalcon\Test\Traits\ModelTestCase as ModelTestCaseTrait;
+use Phalcon\Incubator\Test\Traits\ModelTestCase as ModelTestCaseTrait;
 
 abstract class ModelTestCase extends UnitTestCase
 {

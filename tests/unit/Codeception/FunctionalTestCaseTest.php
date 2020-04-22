@@ -6,7 +6,7 @@ use Codeception\Lib\Di;
 use Codeception\Test\Metadata;
 use Codeception\Test\Unit;
 use Phalcon\Mvc\Dispatcher as PhDispatcher;
-use Phalcon\Test\Codeception\FunctionalTestCase;
+use Phalcon\Incubator\Test\Codeception\FunctionalTestCase;
 
 /**
  * \Phalcon\Test\Test\Codeception\FunctionalTestCaseTest. Tests Integration With Trait.

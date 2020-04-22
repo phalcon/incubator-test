@@ -4,7 +4,7 @@ namespace Phalcon\Incubator\Test\Tests\Unit\PHPUnit;
 
 use Codeception\Test\Unit;
 use Phalcon\Di\DiInterface;
-use Phalcon\Test\PHPUnit\UnitTestCase;
+use Phalcon\Incubator\Test\PHPUnit\UnitTestCase;
 
 /**
  * \Phalcon\Test\Test\PHPUnit\UnitTestCaseTest. Tests Integration With Trait.

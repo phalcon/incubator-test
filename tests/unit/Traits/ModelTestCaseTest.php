@@ -22,8 +22,8 @@ namespace Phalcon\Incubator\Test\Tests\Unit\Traits;
 use Phalcon\Config;
 use Phalcon\Db\Adapter\Pdo\Mysql;
 use Phalcon\Di\FactoryDefault;
-use Phalcon\Test\Codeception\ModelTestCase as ModelTest;
-use Phalcon\Test\Traits\ModelTestCase;
+use Phalcon\Incubator\Test\Codeception\ModelTestCase as ModelTest;
+use Phalcon\Incubator\Test\Traits\ModelTestCase;
 
 class ModelTestCaseTest extends ModelTest
 {

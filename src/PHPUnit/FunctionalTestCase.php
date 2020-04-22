@@ -13,7 +13,7 @@ declare(strict_types=1);
 
 namespace Phalcon\Incubator\Test\PHPUnit;
 
-use Phalcon\Test\Traits\FunctionalTestCase as FunctionalTestCaseTrait;
+use Phalcon\Incubator\Test\Traits\FunctionalTestCase as FunctionalTestCaseTrait;
 
 abstract class FunctionalTestCase extends ModelTestCase
 {

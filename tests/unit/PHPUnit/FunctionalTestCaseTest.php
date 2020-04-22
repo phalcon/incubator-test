@@ -4,7 +4,7 @@ namespace Phalcon\Incubator\Test\Tests\Unit\PHPUnit;
 
 use Codeception\Test\Unit;
 use Phalcon\Mvc\Dispatcher as PhDispatcher;
-use Phalcon\Test\PHPUnit\FunctionalTestCase;
+use Phalcon\Incubator\Test\PHPUnit\FunctionalTestCase;
 
 /**
  * \Phalcon\Test\Test\PHPUnit\FunctionalTestCaseTest. Tests Integration With Trait.

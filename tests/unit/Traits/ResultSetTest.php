@@ -4,8 +4,8 @@ namespace Phalcon\Incubator\Test\Tests\Unit\Traits;
 
 use Phalcon\Mvc\Model;
 use Phalcon\Mvc\Model\Resultset\Simple;
-use Phalcon\Test\Codeception\UnitTestCase as Test;
-use Phalcon\Test\Traits\ResultSet;
+use Phalcon\Incubator\Test\Codeception\UnitTestCase as Test;
+use Phalcon\Incubator\Test\Traits\ResultSet;
 
 /**
  * \Phalcon\Test\Test\Traits\ResultSetTest
@@ -28,7 +28,7 @@ class ResultSetTest extends Test
 {
     use ResultSet;
 
-    /** @var \Phalcon\Test\Traits\ResultSet  */
+    /** @var ResultSet */
     protected $testSubject = null;
 
     public function setUp(): void
@@ -67,15 +67,6 @@ class ResultSetTest extends Test
             3,
             $mockResultSet->count()
         );
-
-        //Testing Rewind/Valid/Current/Key/Next
-        //Disable current due to final restriction
-//        foreach ($mockResultSet as $currentKey => $testModel) {
-//            $this->assertSame(
-//                $mockData[$currentKey],
-//                $testModel
-//            );
-//        }
 
         //Testing getFirst
         $this->assertSame(

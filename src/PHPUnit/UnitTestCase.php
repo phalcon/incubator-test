@@ -14,7 +14,7 @@ declare(strict_types=1);
 namespace Phalcon\Incubator\Test\PHPUnit;
 
 use Phalcon\Di\InjectionAwareInterface;
-use Phalcon\Test\Traits\UnitTestCase as UnitTestCaseTrait;
+use Phalcon\Incubator\Test\Traits\UnitTestCase as UnitTestCaseTrait;
 use PHPUnit\Framework\TestCase as TestCase;
 
 abstract class UnitTestCase extends TestCase implements InjectionAwareInterface

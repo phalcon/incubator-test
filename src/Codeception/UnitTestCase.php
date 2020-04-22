@@ -14,7 +14,7 @@ declare(strict_types=1);
 namespace Phalcon\Incubator\Test\Codeception;
 
 use Codeception\Test\Unit;
-use Phalcon\Test\Traits\UnitTestCase as UnitTestCaseTrait;
+use Phalcon\Incubator\Test\Traits\UnitTestCase as UnitTestCaseTrait;
 
 class UnitTestCase extends Unit
 {

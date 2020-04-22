@@ -90,14 +90,6 @@ trait ResultSet
                 }
             );
 
-// Disable current do to final restriction
-//        $mockResultSet->method('current')
-//            ->willReturnCallback(
-//                function () use ($sharedData) {
-//                    return $sharedData->data[$sharedData->pos];
-//                }
-//            );
-
         $mockResultSet->method('key')
             ->willReturnCallback(
                 function () use ($sharedData) {

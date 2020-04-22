@@ -13,7 +13,7 @@ declare(strict_types=1);
 
 namespace Phalcon\Incubator\Test\Codeception;
 
-use Phalcon\Test\Traits\ModelTestCase as ModelTestCaseTrait;
+use Phalcon\Incubator\Test\Traits\ModelTestCase as ModelTestCaseTrait;
 
 class ModelTestCase extends UnitTestCase
 {

@@ -3,8 +3,8 @@
 namespace Phalcon\Incubator\Test\Tests\Unit;
 
 use Codeception\Test\Unit;
-use Phalcon\Test\ModelTestCase;
-use Phalcon\Test\PHPUnit\ModelTestCase as PHPUnitTestCase;
+use Phalcon\Incubator\Test\ModelTestCase;
+use Phalcon\Incubator\Test\PHPUnit\ModelTestCase as PHPUnitTestCase;
 
 /**
  * \Phalcon\Test\Test\ModelTestCaseTest. Test That Old Placement Still Works Correctly.

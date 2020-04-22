@@ -13,7 +13,7 @@ declare(strict_types=1);
 
 namespace Phalcon\Incubator\Test;
 
-use Phalcon\Test\PHPUnit\UnitTestCase as UnitTest;
+use Phalcon\Incubator\Test\PHPUnit\UnitTestCase as UnitTest;
 
 /**
  * Class serves as a placeholder for backwards compatibility

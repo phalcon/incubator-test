@@ -13,7 +13,7 @@ declare(strict_types=1);
 
 namespace Phalcon\Incubator\Test;
 
-use Phalcon\Test\PHPUnit\FunctionalTestCase as FunctionalTest;
+use Phalcon\Incubator\Test\PHPUnit\FunctionalTestCase as FunctionalTest;
 
 /**
  * Class serves as a placeholder for backwards compatibility

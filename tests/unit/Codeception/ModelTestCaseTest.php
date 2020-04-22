@@ -6,7 +6,7 @@ use Codeception\Lib\Di;
 use Codeception\Test\Metadata;
 use Codeception\Test\Unit;
 use Phalcon\Mvc\Model\Manager as PhModelManager;
-use Phalcon\Test\Codeception\ModelTestCase;
+use Phalcon\Incubator\Test\Codeception\ModelTestCase;
 
 /**
  * \Phalcon\Test\Test\Codeception\ModelTestCaseTest. Tests Integration With Trait.
