@@ -1,6 +1,6 @@
 <?php
 
-namespace Phalcon\Test\Test;
+namespace Phalcon\Incubator\Test\Tests\Unit;
 
 use Codeception\Test\Unit;
 use Phalcon\Test\FunctionalTestCase;

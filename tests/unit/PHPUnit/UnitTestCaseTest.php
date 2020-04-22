@@ -1,6 +1,6 @@
 <?php
 
-namespace Phalcon\Test\Test\PHPUnit;
+namespace Phalcon\Incubator\Test\Tests\Unit\PHPUnit;
 
 use Codeception\Test\Unit;
 use Phalcon\Di\DiInterface;

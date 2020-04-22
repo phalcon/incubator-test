@@ -1,6 +1,6 @@
 <?php
 
-namespace Phalcon\Test\Test\Codeception;
+namespace Phalcon\Incubator\Test\Tests\Unit\Codeception;
 
 use Codeception\Lib\Di;
 use Codeception\Test\Metadata;

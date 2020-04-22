@@ -1,6 +1,6 @@
 <?php
 
-namespace Phalcon\Test\Test\Traits;
+namespace Phalcon\Incubator\Test\Tests\Unit\Traits;
 
 use Phalcon\Mvc\Model;
 use Phalcon\Mvc\Model\Resultset\Simple;

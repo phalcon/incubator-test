@@ -17,7 +17,7 @@
   +------------------------------------------------------------------------+
 */
 
-namespace Phalcon\Test\Test\Traits;
+namespace Phalcon\Incubator\Test\Tests\Unit\Traits;
 
 use Phalcon\Config;
 use Phalcon\Db\Adapter\Pdo\Mysql;
