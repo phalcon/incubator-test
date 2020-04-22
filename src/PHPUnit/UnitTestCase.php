@@ -17,11 +17,6 @@ use Phalcon\Di\InjectionAwareInterface;
 use Phalcon\Test\Traits\UnitTestCase as UnitTestCaseTrait;
 use PHPUnit\Framework\TestCase as TestCase;
 
-/**
- * Class UnitTestCase
- *
- * @package Phalcon\Test
- */
 abstract class UnitTestCase extends TestCase implements InjectionAwareInterface
 {
     use UnitTestCaseTrait;

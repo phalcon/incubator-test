@@ -20,7 +20,6 @@ class UnitTestCase extends Unit
 {
     use UnitTestCaseTrait;
 
-
     /**
      * UnitTester Object
      */

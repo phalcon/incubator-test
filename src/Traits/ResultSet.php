@@ -19,8 +19,6 @@ use Phalcon\Mvc\Model\Resultset as phResultset;
  * Trait ResultSet. Adds Ability To Mock DB ResultSet (Without Actual Connection To DB)
  *
  * The resulting mock is only intended to mock the basic functions of a resultset.
- *
- * @package Phalcon\Test\Traits
  */
 trait ResultSet
 {

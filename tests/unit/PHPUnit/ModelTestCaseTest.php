@@ -33,8 +33,6 @@ class ModelTestCaseTest extends Unit
 
         $testSubject->setUp();
 
-
-
         $reflectionProperty = new \ReflectionProperty(
             ModelTestCase::class,
             'di'

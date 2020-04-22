@@ -17,9 +17,7 @@ use Phalcon\Test\PHPUnit\ModelTestCase as ModelTest;
 
 /**
  * Class serves as a placeholder for backwards compatibility
- * @package Phalcon\Test
  */
 abstract class ModelTestCase extends ModelTest
 {
-
 }

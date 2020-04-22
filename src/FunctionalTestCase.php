@@ -17,9 +17,7 @@ use Phalcon\Test\PHPUnit\FunctionalTestCase as FunctionalTest;
 
 /**
  * Class serves as a placeholder for backwards compatibility
- * @package Phalcon\Test
  */
 abstract class FunctionalTestCase extends FunctionalTest
 {
-
 }

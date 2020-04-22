@@ -17,10 +17,7 @@ use Phalcon\Test\PHPUnit\UnitTestCase as UnitTest;
 
 /**
  * Class serves as a placeholder for backwards compatibility
- *
- * @package Phalcon\Test
  */
 abstract class UnitTestCase extends UnitTest
 {
-
 }

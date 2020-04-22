@@ -59,8 +59,6 @@ class ModelTestCaseTest extends ModelTest
 
         $this->testSubject->setDI($this->di);
 
-
-
         $reflectionMethod = new \ReflectionMethod(
             ModelTest::class,
             'setDb'
@@ -102,8 +100,6 @@ class ModelTestCaseTest extends ModelTest
             ->with('db', $this->isInstanceOf(\Closure::class));
 
         $this->testSubject->setDI($this->di);
-
-
 
         $reflectionMethod = new \ReflectionMethod(
             ModelTest::class,

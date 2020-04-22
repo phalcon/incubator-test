@@ -33,8 +33,6 @@ class FunctionalTestCaseTest extends Unit
 
         $testSubject->setUp();
 
-
-
         $reflectionProperty = new \ReflectionProperty(
             FunctionalTestCase::class,
             'di'
