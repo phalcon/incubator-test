@@ -13,15 +13,19 @@
   | obtain it through the world-wide-web, please send an email             |
   | to license@phalconphp.com so we can send you a copy immediately.       |
   +------------------------------------------------------------------------+
-  | Authors: Phoenix Osiris <phoenix@twistersfury.com>                     |
+  | Authors: Stephen Hoogendijk <stephen@tca0.nl>                          |
   +------------------------------------------------------------------------+
 */
 
-namespace Phalcon\Test\Codeception;
+namespace Phalcon\Incubator\Test;
 
-use Phalcon\Test\Traits\ModelTestCase as ModelTestCaseTrait;
+use Phalcon\Test\PHPUnit\ModelTestCase as ModelTest;
 
-class ModelTestCase extends UnitTestCase
+/**
+ * Class serves as a placeholder for backwards compatibility
+ * @package Phalcon\Test
+ */
+abstract class ModelTestCase extends ModelTest
 {
-    use ModelTestCaseTrait;
+
 }

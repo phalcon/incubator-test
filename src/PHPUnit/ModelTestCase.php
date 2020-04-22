@@ -17,30 +17,11 @@
   +------------------------------------------------------------------------+
 */
 
-namespace Phalcon\Test\PHPUnit;
+namespace Phalcon\Incubator\Test\PHPUnit;
 
-use Phalcon\Di\InjectionAwareInterface;
-use Phalcon\Test\Traits\UnitTestCase as UnitTestCaseTrait;
-use PHPUnit\Framework\TestCase as TestCase;
+use Phalcon\Test\Traits\ModelTestCase as ModelTestCaseTrait;
 
-/**
- * Class UnitTestCase
- *
- * @package Phalcon\Test
- */
-abstract class UnitTestCase extends TestCase implements InjectionAwareInterface
+abstract class ModelTestCase extends UnitTestCase
 {
-    use UnitTestCaseTrait;
-
-    protected function setUp(): void
-    {
-        $this->setUpPhalcon();
-    }
-
-    protected function tearDown(): void
-    {
-        $this->tearDownPhalcon();
-
-        parent::tearDown();
-    }
+    use ModelTestCaseTrait;
 }

@@ -17,7 +17,7 @@
   +------------------------------------------------------------------------+
 */
 
-namespace Phalcon\Test\Traits;
+namespace Phalcon\Incubator\Test\Traits;
 
 use Phalcon\Config;
 use Phalcon\Mvc\Model\Manager as PhModelManager;

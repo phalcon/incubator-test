@@ -17,11 +17,38 @@
   +------------------------------------------------------------------------+
 */
 
-namespace Phalcon\Test\Codeception;
+namespace Phalcon\Incubator\Test\Codeception;
 
-use Phalcon\Test\Traits\FunctionalTestCase as FunctionalTestCaseTrait;
+use Codeception\Test\Unit;
+use Phalcon\Test\Traits\UnitTestCase as UnitTestCaseTrait;
 
-class FunctionalTestCase extends ModelTestCase
+class UnitTestCase extends Unit
 {
-    use FunctionalTestCaseTrait;
+    use UnitTestCaseTrait;
+
+
+    /**
+     * UnitTester Object
+     */
+    protected $tester;
+
+    /**
+     * Standard Setup Method For PHPUnit. Calling setUpPhalcon Here to Maintain Codeception's _before Without a call
+     * to parent::_before
+     */
+    protected function setUp(): void
+    {
+        $this->setUpPhalcon();
+        parent::setUp();
+    }
+
+    /**
+     * Standard Tear Down Method For PHPUnit. Calling tearDownPhalcon Here to Maintain Codeception's _after
+     * Without a call to parent::_before
+     */
+    protected function tearDown(): void
+    {
+        $this->tearDownPhalcon();
+        parent::tearDown();
+    }
 }

@@ -17,15 +17,11 @@
   +------------------------------------------------------------------------+
 */
 
-namespace Phalcon\Test;
+namespace Phalcon\Incubator\Test\PHPUnit;
 
-use Phalcon\Test\PHPUnit\FunctionalTestCase as FunctionalTest;
+use Phalcon\Test\Traits\FunctionalTestCase as FunctionalTestCaseTrait;
 
-/**
- * Class serves as a placeholder for backwards compatibility
- * @package Phalcon\Test
- */
-abstract class FunctionalTestCase extends FunctionalTest
+abstract class FunctionalTestCase extends ModelTestCase
 {
-
+    use FunctionalTestCaseTrait;
 }

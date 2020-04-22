@@ -17,16 +17,15 @@
   +------------------------------------------------------------------------+
 */
 
-namespace Phalcon\Test;
+namespace Phalcon\Incubator\Test;
 
-use Phalcon\Test\PHPUnit\UnitTestCase as UnitTest;
+use Phalcon\Test\PHPUnit\FunctionalTestCase as FunctionalTest;
 
 /**
  * Class serves as a placeholder for backwards compatibility
- *
  * @package Phalcon\Test
  */
-abstract class UnitTestCase extends UnitTest
+abstract class FunctionalTestCase extends FunctionalTest
 {
 
 }

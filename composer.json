@@ -17,7 +17,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Phalcon\\Test\\": "src/Phalcon/Test"
+            "Phalcon\\Incubator\\Test\\": "src/"
         }
     },
     "minimum-stability": "dev",

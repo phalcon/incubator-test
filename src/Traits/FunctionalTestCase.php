@@ -17,7 +17,7 @@
   +------------------------------------------------------------------------+
 */
 
-namespace Phalcon\Test\Traits;
+namespace Phalcon\Incubator\Test\Traits;
 
 use Phalcon\Di\DiInterface;
 use Phalcon\Escaper as PhEscaper;
