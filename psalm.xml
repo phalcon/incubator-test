@@ -7,7 +7,7 @@
   xsi:schemaLocation="https://getpsalm.org/schema/config vendor/vimeo/psalm/config.xsd"
 >
   <projectFiles>
-    <directory name="src/" />
+    <directory name="src" />
     <ignoreFiles>
       <directory name="vendor" />
       <file name="vendor/symfony/polyfill-mbstring/bootstrap80.php" />
@@ -35,7 +35,6 @@
     <MissingReturnType errorLevel="info" />
     <MissingPropertyType errorLevel="info" />
     <InvalidDocblock errorLevel="info" />
-    <MisplacedRequiredParam errorLevel="info" />
 
     <PropertyNotSetInConstructor errorLevel="info" />
     <MissingConstructor errorLevel="info" />
@@ -52,12 +51,13 @@
     <RawObjectIteration errorLevel="info" />
 
     <InvalidStringClass errorLevel="info" />
+    <InvalidArgument errorLevel="info" />
+    <ArgumentTypeCoercion errorLevel="info" />
 
     <!-- level 4 issues - points to possible deficiencies in logic, higher false-positives -->
 
     <MoreSpecificReturnType errorLevel="info" />
     <LessSpecificReturnStatement errorLevel="info" />
-    <TypeCoercion errorLevel="info" />
 
     <PossiblyFalseArgument errorLevel="info" />
     <PossiblyFalseIterator errorLevel="info" />
