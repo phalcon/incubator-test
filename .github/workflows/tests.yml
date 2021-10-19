@@ -1,23 +1,41 @@
-name: "Tests"
-
+name: Testing Suite
 on: [push, pull_request]
 
 jobs:
   run-tests:
-    name: PHP ${{ matrix.php-versions }}
+    name: PHP ${{ matrix.php-versions }} with Phalcon ${{ matrix.phalcon-versions }}
     runs-on: ubuntu-latest
+    env:
+      extensions: mbstring, intl, json, phalcon-${{ matrix.phalcon-versions }}, xdebug, mysql, pgsql
+      key: cache-v0.0.2
     strategy:
       fail-fast: false
       matrix:
         php-versions: ['7.2', '7.3', '7.4']
+        # There is no 4.1.1 version due release bug
+        phalcon-versions: ['4.0.5', '4.0.6', '4.1.0', '4.1.2']
     steps:
       - uses: actions/checkout@v1
-
-      - name: Setup PHP
-        uses: shivammathur/setup-php@v1
+      - name: Setup cache environment
+        id: cache-env
+        uses: shivammathur/cache-extensions@v1
         with:
           php-version: ${{ matrix.php-versions }}
-          extensions: mbstring, intl, json, phalcon4, mysql, pgsql
+          extensions: ${{ env.extensions }}
+          key: ${{ env.key }}
+
+      - name: Cache extensions
+        uses: actions/cache@v1
+        with:
+          path: ${{ steps.cache-env.outputs.dir }}
+          key: ${{ steps.cache-env.outputs.key }}
+          restore-keys: ${{ steps.cache-env.outputs.key }}
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php-versions }}
+          extensions: ${{ env.extensions }}
           tools: pecl
 
       - name: Get Composer Cache Directory
@@ -28,19 +46,19 @@ jobs:
         uses: actions/cache@v1
         with:
           path: ${{ steps.composer-cache.outputs.dir }}
-          key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.json') }}
+          key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
           restore-keys: ${{ runner.os }}-composer-
-
-      - name: Validate Composer
-        run: composer validate
 
       - name: Install Composer dependencies
         run: composer install --prefer-dist --no-suggest
 
+      - name: Setup tests
+        if: success()
+        run: vendor/bin/codecept build
+
       - name: Run test suite
-        run: |
-          vendor/bin/codecept build
-          vendor/bin/codecept run unit --coverage-xml=coverage-${{ matrix.php-versions }}.xml
+        if: success()
+        run: vendor/bin/codecept run unit --coverage --coverage-xml=coverage-${{ matrix.php-versions }}.xml
 
       - name: Upload coverage to Codecov
         if: success()
