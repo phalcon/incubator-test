@@ -13,7 +13,7 @@ declare(strict_types=1);
 
 namespace Phalcon\Incubator\Test\Traits;
 
-use Phalcon\Config;
+use Phalcon\Config\Config;
 use Phalcon\Mvc\Model\Manager as PhModelManager;
 use Phalcon\Mvc\Model\Metadata\Memory as PhMetadataMemory;
 
