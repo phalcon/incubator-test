@@ -13,11 +13,11 @@ declare(strict_types=1);
 
 namespace Phalcon\Incubator\Test\Traits;
 
-use Phalcon\Config;
-use Phalcon\Di;
+use Phalcon\Config\Config;
+use Phalcon\Di\Di;
 use Phalcon\Di\DiInterface;
-use Phalcon\Escaper;
-use Phalcon\Url;
+use Phalcon\Html\Escaper;
+use Phalcon\Mvc\Url;
 
 trait UnitTestCase
 {

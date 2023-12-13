@@ -14,7 +14,7 @@ declare(strict_types=1);
 namespace Phalcon\Incubator\Test\Traits;
 
 use Phalcon\Di\DiInterface;
-use Phalcon\Escaper as PhEscaper;
+use Phalcon\Html\Escaper as PhEscaper;
 use Phalcon\Mvc\Application as PhApplication;
 use Phalcon\Mvc\Dispatcher as PhDispatcher;
 
