@@ -3,6 +3,7 @@
     "description": "Default components to test with Phalcon",
     "homepage": "https://phalcon.io",
     "license": "BSD-3-Clause",
+    "abandoned": "phalcon/talon",
     "require": {
         "php": ">=7.2",
         "ext-phalcon": "^4.0.0"
